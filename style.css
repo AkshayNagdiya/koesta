@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque&family=Caveat:wght@700&family=Inclusive+Sans&family=Lobster&family=Mooli&family=Poppins:wght@200;300;500&family=Quicksand:wght@300&family=Raleway+Dots&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: whitesmoke;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    /* background-image: linear-gradient(to right top, #161915, #121714, #0f1413, #0d1112, #0b0e0f, #0b0e0f, #0b0e0f, #0b0e0f, #0d1112, #0f1413, #121714, #161915); */
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.nav{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+}
+.nav .right a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding-inline: 25px;
+}
+.nav .right a:hover{
+    color: greenyellow;
+}
+.nav .right button{
+    padding: 10px;
+    border: none;
+    color: greenyellow;
+    border-left: 1px solid whitesmoke;
+    background:transparent;
+    padding-inline: 30px;
+    cursor: pointer;
+}
+.nav .right button:hover{
+    color: cadetblue;
+}
+/* ****************************** */
+.hero-part{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 50px;
+}
+.hero-part .left{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero-part .left h1{
+    font-size: 60px;
+}
+.hero-part .left .button{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.hero-part .left .button button{
+    width: 150px;
+    margin-top: 20px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.hero-part .left .button button i{
+    font-size: 30px;
+    padding-right: 10px;
+}
+.hero-part .left .button button:last-child{
+    border-radius: 25px;
+    width: auto;
+    background: transparent;
+    color: yellow;
+    border: 1px solid yellow;
+    padding-inline: 10px;
+}
+.hero-part .left .button button:last-child:hover{
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    background-color: yellow;
+}
+.hero-part .left .button button:first-child:hover{
+    background-color: wheat;
+}
+.hero-part .right{
+    width: 30%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.hero-part .right .horizontal{
+    width: 250px;
+    height: 120px;
+    border-radius: 70px;
+    box-shadow: 0px 0px 10px 5px rgba(255,255,255,1);
+    margin: 20px;
+}
+.hero-part .right .vertical{
+    width: 120px;
+    height: 200px;
+    border-radius: 70px;
+    box-shadow: 0px 0px 10px 5px rgba(255,255,255,1);
+    margin: 20px;
+}
+.hero-part .right div:first-child{
+    position: absolute;
+    right: 0px;
+    background-image: url(./assets/c167f8bc5f9b624b662987dc9fb0684e--modern-mansion-modern-homes.png);
+    background-position: center;
+    background-size: cover;
+}
+.hero-part .right div:nth-child(2){
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    background-image: url(./assets/AVD\ House\ -\ High\ Res-061.png);
+    background-position: center;
+    background-size: cover;
+}
+.hero-part .right div:nth-child(4){
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-image: url(./assets/92884fe1c0975ea4a74ac4b45add96e7.png);
+    background-position: center;
+    background-size: cover;
+}
+.hero-part .right div:last-child{
+    position: absolute;
+    bottom: 0px;
+    background-image: url(./assets/92884fe1c0975ea4a74ac4b45add96e7.png);
+    background-position: center;
+    background-size: cover;
+}
+/* **************************** */
+.footer{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid whitesmoke;
+}
+.footer .first{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer .second{
+    width: 35%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+}
+.footer .third{
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer p{
+    text-align: center;
+    line-height: 30px;
+    padding-inline: 40px;
+    color: rgb(110, 137, 158);
+}
+.footer img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* ******************************* */
+@media (max-width:1024px) {
+    .hero-part{
+        width: 100%;
+    }
+    .hero-part .left{
+        width: 50%;
+    }
+    .hero-part .right{
+        width: 40%;
+        height: 350px;
+    }
+    .hero-part .right .horizontal{
+        width: 200px;
+        height: 90px;
+    }
+
+}
+
+
+@media (max-width:768px) {
+    .nav{
+        width: 100%;
+        padding-inline: 10px;
+    }
+    .nav .right{
+        font-size: 15px;
+    }
+    .hero-part .left h1{
+        font-size: 40px;
+    }
+    .hero-part .left .button{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .hero-part .horizontal{
+        display: none;
+    }
+    .footer p{
+        text-align: center;
+        line-height: 20px;
+        padding-inline: 10px;
+        color: rgb(110, 137, 158);
+    }
+    .footer img{
+        width: 50px;
+        height: 50px;
+    }
+}
